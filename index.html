@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/robin.js" rel="stylesheet"></script>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" type="text/css" href="css/robin.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-wrapper">
+        <div class="grid-container" id="parent-grid-container">
+
+            <!----------------- Top Right Triangles---------------->
+
+            <div class="triangle-up-right triangle-darkblue"></div>
+            <div class="triangle-up-right triangle-lightblue"></div>
+
+
+            <!----------------- Navbar Desktop------------------->
+
+            <div class="grid-container row navbar-desktop">
+                <div class="navbar col s8 md-8 offset-left offset-right">
+                    <div class="site-title col s2">
+                        <i class="fa fa-eercast fa-2x" aria-hidden="true"></i>
+                        <p>Easy<span>Pay</span></p>
+                    </div>
+
+                    <nav class="primary-navigation col s8">
+                        <ul>
+                            <li>Pricing</li>
+                            <li>Support</li>
+                            <li>Documentation</li>
+                            <li>Login</li>
+                            <li>Sign up</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!----------------- Navbar Responsive------------------->
+
+            <div class="grid-container row navbar-responsive">
+                <div class="navbar col s10">
+                    <div class="site-title col s3">
+                        <i class="fa fa-eercast fa-2x" aria-hidden="true"></i>
+                        <p>Easy<span>Pay</span></p>
+                    </div>
+
+                    <nav class="mobile-nav col s2">
+                        <div class="menu">
+                            <span class="menu-span-transition"></span>
+                            <span class="menu-span-transition"></span>
+                            <span class="menu-span-transition"></span>
+                        </div>
+                        <div class="mobile-nav-dropdown">
+                            <ul>
+                                <li>Pricing</li>
+                                <li>Support</li>
+                                <li>Documentation</li>
+                                <li>Login</li>
+                                <li>Sign up</li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+
+            </div>
+
+            <!------------------Overlay Mobile--------------------->
+
+            <div class="overlay">
+            </div>
+
+
+            <!-----------------Scroll to top---------------->
+
+            <div class="grid-container row scroll-top-button">
+                <a href="#parent-grid-container">
+                    <i class="fa fa-angle-up"></i>
+                </a>
+            </div>
+
+
+            <!----------------- Features Section 1------------------>
+
+            <div class="features-section-wrapper grid-container row">
+                <div class="features-section-1 row">
+                    <div class="left-col col s4 offset-left sm-4 md-4 come-in-bottom">
+                        <h1>Easy and fast web and mobile payments</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                        <button class="documentation-button">Documentation</button>
+                        <button class="pricing_info_button">Pricing Information</button>
+                    </div>
+
+                    <div class="right-col col s4 sm-4 md-4 come-in-top">
+                        <img src="images/phone.png">
+                        <div class="payment-box">
+                            <div class="product-info">
+                                <img src="images/adidas-logo.png">
+                                <p class="price">$140,00</p>
+                                <p class="product-name">Adidas Originals</p>
+                            </div>
+                            <div class="card-details">
+                                <input type="text" name="email" placeholder="E-Mail Address"><br>
+                                <input type="text" name="card-no" placeholder="Card number"><br>
+                                <input type="number" name="mmyy" placeholder="MM/YY"><!--
+                                --><input type="number" style="
+                                border-left: 1px solid #ccc;
+                                "name="cvv" placeholder="CVV"><br>
+                                <button class="documentation-button payment-button">Process Payment</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-----------------Scroll Down Button-------------->
+
+            <div class="grid-container row scroll-down-button demo">
+
+                <a href="#features-section-2"><span></span></a>
+
+            </div>
+
+            <!----------------- Features Section 2----------------->
+
+            <div class="features-section-wrapper grid-container row" id="features-section-2">
+                <div class="features-section-2 row">
+                    <div class="left-col col s5 sm-4 md-4 slide-up">
+                        <img id="phone-img-2" src="images/phone.png">
+                        <div class="payment-box">
+                            <div class="product-info col s10">
+                                <div class="col s4 fs2-image vertical-centering">
+                                    <img src="images/dribble.png">
+                                </div>
+                                <div class="col s4 fs2-description vertical-centering">
+                                    <p class="price">$200</p>
+                                    <p class="product-name">Medium Team</p>
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <input type="text" name="email" placeholder="E-Mail Address"><br>
+                                <input type="text" name="card-no" placeholder="Card number"><br>
+                                <input type="number" name="mmyy" placeholder="MM/YY"><!--
+                                --><input type="number" style="
+                                border-left: 1px solid #ccc;
+                                "name="cvv" placeholder="CVV"><br>
+                                <button class="documentation-button payment-button">Process Payment</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-col col s4 sm-4 md-4 offset-right">
+
+                        <div class="col s10 slide-up">
+                            <hr class="horizontal-rule">
+                            <br>
+                            <h1>Easy to implement into your mobile application</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ex commodo consequat.</p>
+                        </div>
+
+                        <div class="col s10 offset-top slide-up">
+                            <i class="fa col s2 fa-credit-card-alt fa-2x" aria-hidden="true"></i>
+                            <div class="col s7 fs2-description">
+                                <p>Accepting international cards</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+
+                        <div class="col s10 slide-up">
+                            <i class="fa col s2 fa-braille fa-2x" aria-hidden="true"></i>
+                            <div class="col s7 fs2-description">
+                                <p>More than 150 currencies</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid-container row scroll-down-button demo">
+                    <br><br>
+                        <a class="scroll-btn-2"href="#features-section-3"><span></span></a>
+                </div>
+            </div>
+
+
+            <!----------------- Features Section 3------------------>
+
+            <div class="features-section-wrapper grid-container row" id="features-section-3">
+                <div class="features-section-3 row">
+                    <div class="left-col col s4 sm-4 md-4 offset-left offset-top slide-up">
+                        <hr class="horizontal-rule">
+                        <br>
+                        <h3>Process payments online</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Used do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+
+                    <div class="right-col col s4 sm-4 md-4 offset-left slide-up">
+                        <div class="payment-box">
+                            <div class="product-info">
+                                <img src="images/adidas-logo.png">
+                                <p class="price">$140,00</p>
+                                <p class="product-name">Adidas Originals</p>
+                            </div>
+                            <div class="card-details">
+                                <input type="text" name="email" placeholder="E-Mail Address"><br>
+                                <input type="text" name="card-no" placeholder="Card number"><br>
+                                <input type="number" name="mmyy" placeholder="MM/YY"><!--
+                                --><input type="number" style="
+                                border-left: 1px solid #ccc;
+                                "name="cvv" placeholder="CVV"><br>
+                                <button class="documentation-button payment-button">Process Payment</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col s10 offset-top offset-top-md">
+                        <div class="col s4 sm-4 md-4 offset-left easy-to-program slide-up">
+                            <i class="fa col s1 fa-code fa-2x" aria-hidden="true"></i>
+                            <div class="col s8 fs3-description">
+                                <h3>Easy to program</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+
+                        <div class="col s4 sm-4 md-4 offset right schedule-your-payouts slide-up">
+                            <i class="fa col s1 fa-database fa-2x" aria-hidden="true"></i>
+                            <div class="col s8 fs3-description">
+                                <h3>Schedule your payouts</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------- Get Started Now------------------>
+
+            <div class="features-section-wrapper grid-container row get-started-now-wrapper">
+                <div class="get-started-now row offset-left offset-right slide-up">
+
+                    <hr class="horizontal-rule">
+                    <br>
+                    <div class="col s8 sm-4 md-8 offset-left offset-right">
+                        <p class="heading">Get started now</p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ex commodo consequat.</p>
+                    </div>
+
+                    <button class="documentation-button signup-button">Sign up</button>
+                    <button class="pricing_info_button">Documentation</button>
+                </div>
+            </div>
+
+
+            <!----------------- Footer------------------>
+
+            <div class="grid-container row">
+                <div class="navbar col s8 sm-4 md-8 offset-left offset-right">
+                    <div class="site-title col s4">
+                        <i class="fa fa-eercast fa-2x" aria-hidden="true"></i>
+                        <p>Easy<span>Pay</span></p>
+                        <p class="copyright-info">&#169 2017 EasyPay Inc</p>
+                    </div>
+
+                    <nav class="site-map col s6">
+                        <ul>
+                            <li>Blog</li>
+                            <li>Jobs</li>
+                            <li>Privacy & terms</li>
+                            <li>Contact</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

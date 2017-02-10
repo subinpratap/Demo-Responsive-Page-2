@@ -1,0 +1,160 @@
+/*--------------------Custom Grid Layout---------------------------*/
+
+.grid-container{
+    width : 100%; 
+}
+
+.row{
+    margin: 0 auto 1em auto;
+}
+
+
+.row:after{
+    display: table;
+    content: '';
+    clear:both;
+}
+
+.row .col{
+    float: left;
+    padding: 0 0.5em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.row .col.s1{
+    width: 10%;
+}
+
+.row .col.s2{
+    width: 20%;
+}
+
+.row .col.s3{
+    width: 30%;
+}
+
+.row .col.s4{
+    width: 40%;
+}
+
+.row .col.s5{
+    width: 50%;
+}
+
+.row .col.s6{
+    width: 60%;
+}
+
+.row .col.s7{
+    width: 70%;
+}
+
+.row .col.s8{
+    width: 80%;
+}
+
+.row .col.s9{
+    width: 90%;
+}
+
+.row .col.s10{
+    width: 100%;
+}
+
+/*-----------commonly used class--------------*/
+
+.offset-left {
+    margin-left: 10%;
+}
+
+.offset-right{
+    margin-right: 10%;
+}
+
+.offset-top{
+    margin-top: 10em;
+}
+
+.offset-bottom{
+    margin-bottom: 10em;
+}
+/*-------------------Media Queries-------------------*/
+
+@media screen and (max-width: 600px){
+    body {
+        font-size: 12px;
+    }
+    
+    .row .col.sm-4 {
+        width: 100%;  
+    }
+    
+    .offset-left {
+        margin-left: 0;
+    }
+
+    .offset-right{
+        margin-right: 0;
+    }
+    
+    .grid-container{
+        padding-top: 0.8em;
+    }
+    
+    .offset-top{
+        margin-top: 0;
+    }
+
+    .offset-bottom{
+        margin-bottom: 0;
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width: 1024px){
+    body {
+        font-size: 14px;
+    }
+    
+    .row .col.md-4 {
+        width: 100%;  
+    }
+    
+    .offset-left {
+        margin-left: 0;
+    }
+
+    .offset-right{
+        margin-right: 0;
+    }
+    
+    .grid-container{
+        padding-top: 0.8em;
+    }
+    
+    .offset-top{
+        margin-top: 0;
+    }
+
+    .offset-bottom{
+        margin-bottom: 0;
+    }
+    
+    .md-8{
+        width: 100% !important;
+    }
+    
+    .row .col.md-4 {
+        width: 50%;  
+    }
+    
+    .row .col.md-8{
+        width: 100%;
+    }
+    
+    .offset-top-md{
+        margin-top: 3em;
+    }
+}
